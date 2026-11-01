@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="ru"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Светлана Ильина – дизайнер интерьеров, Москва</title>
+<meta name="description" content="Светлана Ильина, дизайнер интерьеров. Москва и Подмосковье. Проектирую квартиры и загородные дома. Начинаю с планировки, заканчиваю шторами и посудой. 25 лет в профессии, больше 100 проектов.">
+<meta property="og:title" content="Светлана Ильина – дизайнер интерьеров, Москва">
+<meta property="og:description" content="Светлана Ильина, дизайнер интерьеров. Москва и Подмосковье. Проектирую квартиры и загородные дома. Начинаю с планировки, заканчиваю шторами и посудой. 25 лет в профессии, больше 100 проектов.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:image" content="https://ilin20vek.github.io/svetlana-ilina/img/og.jpg"><meta name="robots" content="noindex">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="theme-color" content="#E3E8EA">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preload" href="fonts/ilyina-display.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/ysabeau-office-400.woff2" as="font" type="font/woff2" crossorigin>
+<style>@font-face{font-family:"Ilyina Display";src:url(fonts/ilyina-display.woff2) format("woff2");font-display:swap}
+@font-face{font-family:"Ysabeau Office";src:url(fonts/ysabeau-office-400.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Ysabeau Office";src:url(fonts/ysabeau-office-600.woff2) format("woff2");font-weight:600;font-display:swap}
+@font-face{font-family:"Ysabeau Office";src:url(fonts/ysabeau-office-400-italic.woff2) format("woff2");font-weight:400;font-style:italic;font-display:swap}
+:root{--fon:#E3E8EA;--chernila:#18233A;--vtor:#4A5566;--smorodina:#7A2335;--latun:#7A5E2C;
+--fokus:var(--chernila);--pole:var(--fon);--tekst:var(--chernila);--metka:var(--vtor);--yarlyk:var(--latun);
+--kray:clamp(16px,4vw,56px)}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+[id]{scroll-margin-top:84px}
+body{margin:0;background:var(--fon);color:var(--chernila);
+font:400 18px/1.6 "Ysabeau Office",Georgia,serif;font-variant-numeric:lining-nums;
+-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--fokus);outline-offset:3px}
+.vid{font-family:"Ilyina Display",Georgia,serif;font-weight:400;letter-spacing:0;line-height:1.02}
+h1,h2,h3{text-wrap:balance}
+p{text-wrap:pretty}
+.nowrap{white-space:nowrap}
+.skryto{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+/* метка вопроса к Светлане - цветом ярлыков */
+.vm{display:block;font-weight:600;font-size:15px;line-height:1.4;color:var(--yarlyk);margin-top:8px}
+p > .vm:first-child,li > .vm:first-child{margin:0 0 6px}
+/* шапка */
+.verh{position:sticky;top:0;z-index:20;background:var(--fon);display:flex;align-items:center;
+gap:28px;padding:12px var(--kray);border-bottom:1px solid rgba(24,35,58,.12)}
+.verh .imya{font-size:26px;text-decoration:none;margin-right:auto;white-space:nowrap}
+.razdely{display:flex;gap:26px}
+.razdely a{text-decoration:none;font-weight:600;font-size:16px}
+.razdely a:hover{color:var(--smorodina)}
+.verh .tel{font-weight:600;text-decoration:none;white-space:nowrap}
+.razdely-mob{display:none}
+/* кнопки */
+.knopki{display:flex;flex-wrap:wrap;gap:12px}
+.knopka{display:inline-flex;align-items:center;justify-content:center;min-height:52px;
+padding:0 24px;border-radius:4px;font-weight:600;font-size:17px;text-decoration:none;
+border:2px solid var(--smorodina);background:var(--smorodina);color:#fff;white-space:nowrap}
+.knopka:hover{background:#5E1A29;border-color:#5E1A29}
+.knopka.vtor{background:transparent;color:inherit;border-color:currentColor}
+.knopka.vtor:hover{background:rgba(0,0,0,.06)}
+.knopka.malaya{min-height:42px;padding:0 16px;font-size:16px}
+/* первый экран: имя, дело, кнопки, регалии - и портрет справа */
+.geroy{display:grid;grid-template-columns:minmax(0,8fr) minmax(0,4fr);column-gap:clamp(24px,4vw,64px);
+grid-template-areas:"imya portret" "tekst portret" "knopki portret" "regalii portret" ". portret";
+grid-template-rows:auto auto auto auto 1fr;
+padding:clamp(28px,5vh,60px) var(--kray) clamp(48px,8vh,96px)}
+.geroy h1{grid-area:imya;font-size:clamp(48px,7.7vw,150px);margin:0 0 clamp(16px,3vh,32px);white-space:nowrap}
+.geroy h1 span{display:inline}
+.g-tekst{grid-area:tekst}
+.geroy > .knopki{grid-area:knopki}
+.geroy .regalii{grid-area:regalii;margin-top:clamp(28px,4vh,44px)}
+.g-portret{grid-area:portret;margin:0}
+.g-portret img{width:100%;aspect-ratio:2/3;object-fit:cover}
+.delo{font-weight:600;font-size:clamp(19px,1.6vw,22px);margin:0 0 10px}
+.lid{font-size:clamp(21px,2vw,28px);line-height:1.4;margin:0 0 28px;max-width:24em}
+.regalii{list-style:none;margin:0;padding:0 0 0 20px;border-left:3px solid var(--latun);
+columns:2;column-gap:32px}
+.regalii li{font-size:17px;line-height:1.35;padding:6px 0;break-inside:avoid}
+.regalii b{font-weight:600}
+/* разделы */
+.razdel{padding:clamp(56px,8vw,112px) var(--kray)}
+.razdel.tihiy{background:#D3DBDE;--yarlyk:#6A5126}
+.razdel h2{font-size:clamp(38px,4.6vw,64px);margin:0 0 clamp(24px,3vw,40px)}
+.vvod{font-size:clamp(19px,1.5vw,22px);max-width:40em;margin:-8px 0 32px}
+/* работы: девять её работ в её порядке; новее - крупнее */
+.raboty{padding-top:0}
+.galereya{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:clamp(28px,3vw,44px) clamp(14px,2vw,28px);
+list-style:none;margin:0;padding:0}
+.rabota{grid-column:span 3}
+.rabota.r1{grid-column:span 6}
+.rabota.r2{grid-column:span 4}
+.rabota a{display:block;text-decoration:none}
+.rabota img{width:100%;aspect-ratio:4/5;object-fit:cover;background:#D3DBDE}
+.rabota.r1 img{aspect-ratio:4/3}
+.podpis{display:flex;gap:12px;align-items:baseline;margin-top:12px}
+.podpis .nomer{font-size:20px;color:var(--latun);flex:none}
+.podpis .nazv{font-size:clamp(23px,1.9vw,30px);line-height:1.08}
+.rabota.r1 .nazv{font-size:clamp(26px,2.4vw,36px)}
+.rabota a:hover .nazv{color:var(--smorodina)}
+/* с чем приходят */
+.situacii{display:grid;grid-template-columns:repeat(4,1fr);gap:32px;margin:0;padding:0;list-style:none}
+.situacii h3{font-size:30px;margin:0 0 12px}
+.situacii p{margin:0;font-size:17px;line-height:1.5}
+.situacii .usluga{margin-top:14px;font-weight:600;color:var(--latun);font-size:16px}
+.situacii .usluga a{text-underline-offset:3px;text-decoration-thickness:1px}
+.situacii .angl{font-weight:400;font-size:15px;color:var(--vtor);white-space:nowrap}
+.situacii .cena{margin-top:2px;font-weight:600;font-size:17px}
+.konsult{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:12px clamp(24px,4vw,64px);
+margin:clamp(40px,5vw,64px) 0 0;padding-top:clamp(28px,3vw,40px);border-top:1px solid rgba(24,35,58,.16)}
+.konsult h3{font-size:clamp(30px,3vw,42px);margin:0 0 10px}
+.konsult .cena-k{margin:0;font-weight:600;font-size:clamp(18px,1.4vw,20px)}
+.konsult ol{list-style:none;margin:0;padding:0;counter-reset:k;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 40px}
+.konsult li{counter-increment:k;display:grid;grid-template-columns:36px 1fr;font-size:17px;line-height:1.5}
+.konsult li::before{content:counter(k);font-family:"Ilyina Display",Georgia,serif;font-size:30px;line-height:1;color:var(--latun)}
+/* этапы */
+.shagi-blok{display:grid;grid-template-columns:4fr 8fr;gap:40px}
+.shagi-blok h2{margin-bottom:16px}
+.shagi-blok .cena-p{margin:20px 0 0;font-size:17px;line-height:1.5;max-width:22em}
+.shagi-blok .cena-p b{font-weight:600}
+.shagi{list-style:none;margin:0;padding:0;counter-reset:shag}
+.shagi li{counter-increment:shag;display:grid;grid-template-columns:56px 1fr;gap:8px 16px;
+padding:18px 0;border-top:1px solid rgba(24,35,58,.16)}
+.shagi li::before{content:counter(shag);font-family:"Ilyina Display",Georgia,serif;font-size:40px;
+line-height:1;color:var(--yarlyk)}
+.shagi b{display:block;font-weight:600;font-size:19px}
+.shagi .chto{display:block;font-size:17px}
+.shagi .itog{display:block;font-size:17px;margin-top:6px}
+.shagi .itog i{font-style:normal;font-weight:600;color:var(--yarlyk)}
+/* обо мне: портрет ушёл на первый экран */
+.obo-mne{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:0 clamp(24px,4vw,64px);
+grid-template-areas:"zag tekst" "fakty tekst";grid-template-rows:auto 1fr;align-items:start}
+.obo-mne h2{grid-area:zag}
+.obo-tekst{grid-area:tekst;max-width:42em}
+.obo-tekst p{margin:0 0 16px;font-size:clamp(18px,1.4vw,20px)}
+.fakty{grid-area:fakty;list-style:none;margin:0;padding:0 0 0 20px;border-left:3px solid var(--latun)}
+.fakty li{padding:6px 0;font-size:17px;line-height:1.4}
+.fakty li > b{font-weight:600}
+/* признание */
+.priznanie{padding-top:0}
+.nagrady{list-style:none;margin:0;padding:0;max-width:1000px}
+.nagrady li{display:grid;grid-template-columns:200px 1fr;gap:4px 24px;padding:14px 0;
+border-top:1px solid rgba(24,35,58,.16);font-size:17px;line-height:1.5}
+.nagrady .god{font-weight:600;color:var(--latun)}
+.nagrady li > span > .vm:first-child{margin-top:0}
+.pressa{margin:24px 0 0;font-size:17px;max-width:1000px}
+/* вопросы */
+.voprosy{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:36px 56px;max-width:1240px}
+.voprosy h3{font-weight:600;font-size:20px;line-height:1.35;margin:0 0 8px}
+.voprosy p{margin:0;font-size:17px;line-height:1.55}
+.voprosy .ceny{margin:10px 0 12px;padding:0 0 0 1.1em;font-size:17px;line-height:1.5}
+.voprosy .ceny li{padding:2px 0}
+/* связаться */
+.nachat{background:var(--chernila);color:#E9EDF2;--fokus:#E9EDF2;padding:clamp(56px,8vw,112px) var(--kray)}
+.nachat h2{font-size:clamp(40px,5vw,72px);margin:0 0 20px}
+.nachat p{font-size:clamp(19px,1.5vw,22px);max-width:36em;margin:0 0 16px}
+.nachat .knopki{margin-top:28px}
+.nachat .knopka.vtor{color:#E9EDF2}
+.nachat .bolshoy-tel{font-family:"Ilyina Display",Georgia,serif;font-size:clamp(36px,4.4vw,60px);
+text-decoration:none;display:inline-block;margin:8px 0 0;white-space:nowrap}
+.niz{background:var(--chernila);color:#B9C2CF;padding:0 var(--kray) 32px;font-size:15px;
+display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.niz a{color:#E9EDF2}
+/* страница работы и список ранних работ */
+.dom-shapka{background:var(--pole);color:var(--tekst);--fokus:var(--tekst);--yarlyk:var(--metka);
+padding:clamp(28px,5vw,64px) var(--kray) clamp(32px,5vw,64px)}
+.dom-shapka .nazad{font-weight:600;font-size:16px;text-underline-offset:4px}
+.dom-shapka h1{font-size:clamp(46px,7vw,104px);margin:18px 0 10px}
+.dom-shapka .opis{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 48px;max-width:1100px;margin-top:20px}
+.dom-shapka .opis .vm{font-size:17px;margin:0}
+.metka{font-weight:600;font-size:16px;color:var(--metka);margin:0}
+.fakt{font-size:18px;line-height:1.5;margin:0}
+.citata{margin:0;font-style:italic;font-size:clamp(19px,1.5vw,22px);line-height:1.5}
+.citata cite{display:block;font-style:normal;font-size:15px;color:var(--metka);margin-top:8px}
+.kadry{padding:clamp(24px,4vw,56px) var(--kray);display:grid;grid-template-columns:repeat(2,minmax(0,1fr));
+gap:clamp(14px,2vw,28px);align-items:start}
+.kadry figure{margin:0}
+.kadry .shiroko{grid-column:1 / -1}
+.kadry .shiroko img{margin:0 auto}
+.kadry .rodnoy{margin:0 auto}
+.kadry .odin img{width:min(100%,760px);margin:0 auto}
+.sosedi{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 24px;padding:24px var(--kray) 48px}
+.sosedi a{text-decoration:none}
+.sosedi > :nth-child(2){text-align:right}
+.sosedi small{display:block;font-size:15px;color:var(--vtor)}
+.sosedi .vid{font-size:30px}
+.eshche{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,1fr);gap:0 48px}
+.eshche li{border-top:1px solid rgba(24,35,58,.14)}
+.eshche a{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:16px 0;text-decoration:none}
+.eshche .vid{font-size:30px}
+.eshche .tip-r{font-size:16px;color:var(--vtor);text-align:right}
+.eshche a:hover .vid{color:var(--smorodina)}
+@media (max-width:1100px){
+.razdely{gap:18px}
+.verh .tel{display:none}
+.situacii{grid-template-columns:repeat(2,1fr)}
+.regalii{columns:1}
+.konsult{grid-template-columns:1fr}
+}
+@media (max-width:760px){
+body{font-size:17px}
+[id]{scroll-margin-top:64px}
+.verh{padding:10px var(--kray);gap:12px}
+.verh .imya{font-size:22px}
+.verh .razdely{display:none}
+.razdely-mob{display:flex;gap:6px 18px;padding:10px var(--kray) 0;flex-wrap:wrap}
+.razdely-mob a{font-weight:600;font-size:16px;text-decoration:none;padding:4px 0}
+.geroy{padding-top:20px;grid-template-columns:minmax(0,1fr);
+grid-template-areas:"imya" "tekst" "knopki" "portret" "regalii";grid-template-rows:auto}
+.g-portret{margin-top:28px}
+.g-portret img{aspect-ratio:4/5;object-position:50% 25%}
+.geroy h1{font-size:clamp(52px,17vw,72px);white-space:normal;line-height:.98;margin-bottom:18px}
+.geroy h1 span{display:block}
+.delo{font-size:17px}
+.lid{font-size:19px;margin:0}
+.geroy > .knopki{margin-top:22px;flex-wrap:nowrap;gap:10px}
+.geroy > .knopki .knopka{flex:1 1 auto;padding:0 14px;font-size:16px}
+.knopki .knopka{flex:1 1 140px}
+.geroy .regalii{margin-top:28px}
+.galereya{gap:26px 14px}
+.rabota,.rabota.r2{grid-column:span 6}
+.rabota.r1,.rabota.mob-shiroko{grid-column:1 / -1}
+.podpis{gap:8px;margin-top:8px}
+.podpis .nomer{font-size:17px}
+.podpis .nazv{font-size:20px}
+.rabota.r1 .nazv,.rabota.mob-shiroko .nazv{font-size:26px}
+.situacii,.voprosy,.eshche{grid-template-columns:1fr}
+.konsult ol{grid-template-columns:1fr}
+.shagi-blok{grid-template-columns:1fr;gap:8px}
+.obo-mne{grid-template-columns:1fr;grid-template-areas:"zag" "tekst" "fakty"}
+.fakty{margin-top:12px}
+.nagrady li{grid-template-columns:1fr;gap:0}
+.eshche .vid{font-size:26px}
+.eshche a{flex-direction:column;gap:2px}
+.eshche .tip-r{text-align:left}
+.kadry{grid-template-columns:1fr}
+.dom-shapka .opis{grid-template-columns:1fr}
+.sosedi{grid-template-columns:1fr}
+.sosedi > :nth-child(2){text-align:left}
+.sosedi > span:empty{display:none}
+.sosedi .vid{font-size:24px}
+}</style>
+</head><body>
+<header class="verh">
+  <a class="imya vid" href="index.html">Светлана Ильина</a>
+  <nav class="razdely" aria-label="Разделы"><a href="#raboty">Работы</a><a href="#uslugi">Услуги</a><a href="#etapy">Этапы</a><a href="#obo-mne">Обо мне</a><a href="#voprosy">Вопросы</a></nav>
+  <a class="tel" href="tel:+79166199985">+7 916 619-99-85</a>
+  <a class="knopka malaya" href="tel:+79166199985">Позвонить</a>
+</header>
+<nav class="razdely-mob" aria-label="Разделы"><a href="#raboty">Работы</a><a href="#uslugi">Услуги</a><a href="#etapy">Этапы</a><a href="#obo-mne">Обо мне</a><a href="#voprosy">Вопросы</a></nav>
+<main>
+<section class="geroy" aria-labelledby="imya">
+  <h1 class="vid" id="imya"><span>Светлана</span> <span>Ильина</span></h1>
+  <div class="g-tekst">
+    <p class="delo">Дизайнер интерьеров. Москва и&nbsp;Подмосковье.</p>
+    <p class="lid">Проектирую квартиры и&nbsp;загородные дома. Начинаю с&nbsp;планировки, заканчиваю шторами и&nbsp;посудой.</p>
+  </div>
+  <div class="knopki"><a class="knopka" href="tel:+79166199985">Позвонить <span class="skryto">+7 916 619-99-85</span></a><a class="knopka vtor" href="https://t.me/svetlana_ilina_interior" rel="noopener">Написать в Телеграм</a></div>
+  <ul class="regalii" aria-label="Коротко"><li><b>25&nbsp;лет</b> в&nbsp;профессии</li><li><b>Больше 100</b> завершённых проектов</li><li><b>European Property&nbsp;Awards</b>, Лондон, 2017</li><li><b>Interia&nbsp;Awards&nbsp;2016</b>, специальная номинация</li><li><b><span class="nowrap">Топ-50</span> дизайнеров России</b> по&nbsp;версии Archiprofi</li></ul>
+  <figure class="g-portret"><img src="foto/portret-710.jpg" srcset="foto/portret-480.jpg 480w, foto/portret-710.jpg 710w" sizes="(max-width:760px) 100vw, 30vw" width="710" height="1065" alt="Светлана Ильина в синем бархатном жакете с образцами тканей" fetchpriority="high"></figure>
+</section>
+
+<section class="razdel raboty" id="raboty" aria-labelledby="rab">
+  <h2 class="vid" id="rab">Работы</h2>
+  <ul class="galereya"><li class="rabota r1"><a href="proekty/ofis-gteh.html"><img src="foto/karta-ofis-gteh-1280.jpg" srcset="foto/karta-ofis-gteh-700.jpg 700w, foto/karta-ofis-gteh-1280.jpg 1280w" sizes="(max-width:760px) 100vw, 50vw" width="1280" height="960" alt="" loading="lazy" decoding="async"><span class="podpis"><span class="nomer vid">01</span><span class="nazv vid">«Офис для&nbsp;компании GTEH»</span></span></a></li><li class="rabota r1"><a href="proekty/kino-na-plyazhe.html"><img src="foto/karta-kino-na-plyazhe-1300.jpg" srcset="foto/karta-kino-na-plyazhe-700.jpg 700w, foto/karta-kino-na-plyazhe-1300.jpg 1300w" sizes="(max-width:760px) 100vw, 50vw" width="1300" height="975" alt="" loading="lazy" decoding="async"><span class="podpis"><span class="nomer vid">02</span><span class="nazv vid">«Кино на&nbsp;пляже»</span></span></a></li><li class="rabota r2 mob-shiroko"><a href="proekty/altamira.html"><img src="foto/karta-altamira-1000.jpg" srcset="foto/karta-altamira-500.jpg 500w, foto/karta-altamira-1000.jpg 1000w" sizes="(max-width:760px) 100vw, 33vw" width="1000" height="1250" alt="" loading="lazy" decoding="async"><span class="podpis"><span class="nomer vid">03</span><span class="nazv vid">«Альтамира»</span></span></a></li><li class="rabota r2"><a href="proekty/poeziya-russkoy-dachi.html"><img src="foto/karta-poeziya-russkoy-dachi-870.jpg" srcset="foto/karta-poeziya-russkoy-dachi-500.jpg 500w, foto/karta-poeziya-russkoy-dachi-870.jpg 870w" sizes="(max-width:760px) 50vw, 33vw" width="870" height="1088" alt="" loading="lazy" decoding="async"><span class="podpis"><span class="nomer vid">04</span><span class="nazv vid">«Поэзия русской дачи»</span></span></a></li><li class="rabota r2"><a href="proekty/kvartira-s-kaminom.html"><img src="foto/karta-kvartira-s-kaminom-1000.jpg" srcset="foto/karta-kvartira-s-kaminom-500.jpg 500w, foto/karta-kvartira-s-kaminom-1000.jpg 1000w" sizes="(max-width:760px) 50vw, 33vw" width="1000" height="1250" alt="" loading="lazy" decoding="async"><span class="podpis"><span class="nomer vid">05</span><span class="nazv vid">«Квартира с&nbsp;камином»</span></span></a></li><li class="rabota r3"><a href="proekty/alabyana.html"><img src="foto/karta-alabyana-1000.jpg" srcset="foto/karta-alabyana-500.jpg 500w, foto/karta-alabyana-1000.jpg 1000w" sizes="(max-width:760px) 50vw, 25vw" width="1000" height="1250" alt="" loading="lazy" decoding="async"><span class="podpis"><span class="nomer vid">06</span><span class="nazv vid">«Алабяна»</span></span></a></li><li class="rabota r3"><a href="proekty/kosmos-v-mansarde.html"><img src="foto/karta-kosmos-v-mansarde-876.jpg" srcset="foto/karta-kosmos-v-mansarde-500.jpg 500w, foto/karta-kosmos-v-mansarde-876.jpg 876w" sizes="(max-width:760px) 50vw, 25vw" width="876" height="1095" alt="" loading="lazy" decoding="async"><span class="podpis"><span class="nomer vid">07</span><span class="nazv vid">«Космос в&nbsp;мансарде для&nbsp;молодого человека»</span></span></a></li><li class="rabota r3"><a href="proekty/banty-i-gorohi.html"><img src="foto/karta-banty-i-gorohi-1000.jpg" srcset="foto/karta-banty-i-gorohi-500.jpg 500w, foto/karta-banty-i-gorohi-1000.jpg 1000w" sizes="(max-width:760px) 50vw, 25vw" width="1000" height="1250" alt="" loading="lazy" decoding="async"><span class="podpis"><span class="nomer vid">08</span><span class="nazv vid">«Банты и&nbsp;горохи»</span></span></a></li><li class="rabota r3"><a href="proekty/redizayn-mansardy-boho.html"><img src="foto/karta-redizayn-mansardy-boho-1000.jpg" srcset="foto/karta-redizayn-mansardy-boho-500.jpg 500w, foto/karta-redizayn-mansardy-boho-1000.jpg 1000w" sizes="(max-width:760px) 50vw, 25vw" width="1000" height="1250" alt="" loading="lazy" decoding="async"><span class="podpis"><span class="nomer vid">09</span><span class="nazv vid">«Редизайн мансарды в&nbsp;стиле бохо»</span></span></a></li></ul>
+</section>
+
+<section class="razdel" id="uslugi" aria-labelledby="us" style="padding-top:0">
+  <h2 class="vid" id="us">С&nbsp;чем ко&nbsp;мне приходят</h2>
+  <ul class="situacii"><li><h3 class="vid">Квартира в&nbsp;новостройке</h3><p>Ключи на&nbsp;руках, стены голые, с&nbsp;чего начать&nbsp;– непонятно. Начинаем с&nbsp;обмера и&nbsp;планировки. Дальше&nbsp;– полный проект, ремонт по&nbsp;чертежам, мебель и&nbsp;декор.</p><p class="usluga">Услуга: <a href="#etapy">полный проект</a> <span class="angl">(Design&amp;Style)</span></p><p class="cena">от&nbsp;8000&nbsp;₽ за&nbsp;м²</p></li><li><h3 class="vid">Загородный дом</h3><p>Дом в&nbsp;Подмосковье, и&nbsp;интерьер нужен целиком. Делаю планировку, подбираю материалы, свет, мебель и&nbsp;текстиль. За&nbsp;загородный дом я&nbsp;получила Interia&nbsp;Awards&nbsp;2016.</p><p class="usluga">Услуга: <a href="#etapy">полный проект</a> <span class="angl">(Design&amp;Style)</span></p><p class="cena">от&nbsp;8000&nbsp;₽ за&nbsp;м²</p></li><li><h3 class="vid">Ремонт идёт, а&nbsp;решений нет</h3><p>Мебель, свет, сантехника и&nbsp;отделка ещё не&nbsp;выбраны. Подбираю всё по&nbsp;комнатам и&nbsp;показываю на&nbsp;коллажах и&nbsp;образцах. Потом заказываю, привожу и&nbsp;расставляю.</p><p class="usluga">Услуга: подбор и&nbsp;комплектация <span class="angl">(White Box)</span></p><p class="cena">от&nbsp;4000&nbsp;₽ за&nbsp;м²</p></li><li><h3 class="vid">Обновить без&nbsp;ремонта</h3><p>Стены трогать не&nbsp;нужно, нужно другое настроение. Меняю текстиль, свет и&nbsp;декор. Привожу вещи на&nbsp;примерку&nbsp;– вы оставляете то, что&nbsp;понравилось.</p><p class="usluga">Услуга: стайлинг <span class="angl">(Full Style)</span></p><p class="cena">от&nbsp;45&nbsp;000&nbsp;₽</p></li></ul>
+  <div class="konsult" id="konsultaciya">
+    <div>
+      <h3 class="vid">Нужна только планировка</h3>
+      <p class="cena-k">Консультация по&nbsp;планировке: 1&nbsp;час онлайн, 20&nbsp;000&nbsp;₽.</p>
+    </div>
+    <ol><li><span>Вы присылаете планировку и&nbsp;пишете, что&nbsp;в&nbsp;ней не&nbsp;устраивает и&nbsp;какие есть вопросы.</span></li><li><span>Я&nbsp;разбираю всё заранее и&nbsp;на&nbsp;следующий день или&nbsp;в&nbsp;условленный день провожу консультацию онлайн.</span></li><li><span>У&nbsp;вас остаётся эскизный чертёж с&nbsp;примерным зонированием: что&nbsp;помещается в&nbsp;квартире и&nbsp;какие в&nbsp;ней могут быть зоны.</span></li><li><span>Чертёж делается по&nbsp;вашей планировке, без&nbsp;замера. Если задумана перепланировка, скажу, можно ли её согласовать.</span></li></ol>
+  </div>
+</section>
+
+<section class="razdel tihiy" id="etapy" aria-labelledby="et">
+  <div class="shagi-blok">
+    <div>
+      <h2 class="vid" id="et">Как&nbsp;идёт полный проект</h2>
+      <p class="vvod" style="margin:0">Шесть шагов и&nbsp;что&nbsp;вы получаете на&nbsp;каждом.</p>
+      <p class="cena-p">Проект&nbsp;– от&nbsp;8000&nbsp;₽ за&nbsp;м². Реализация&nbsp;– от&nbsp;60&nbsp;000&nbsp;₽ в&nbsp;месяц: авторский надзор, проверенные подрядчики, мебель на&nbsp;заказ по&nbsp;эскизам и&nbsp;финальная стилизация.</p>
+    </div>
+    <ol class="shagi"><li><div><b>Встреча на&nbsp;объекте.</b><span class="chto">Смотрю помещение, делаю обмеры и&nbsp;фотографии, вместе записываем задачу.</span><span class="itog"><i>Вы получаете:</i> техническое задание.</span></div></li><li><div><b>Планировка.</b><span class="chto">Предлагаю три варианта. Вы выбираете один.</span><span class="itog"><i>Вы получаете:</i> планировочное решение.</span></div></li><li><div><b>Материалы и&nbsp;мебель.</b><span class="chto">Подбираю отделку, мебель, свет и&nbsp;оборудование.</span><span class="itog"><i>Вы получаете:</i> визуализацию интерьера.</span></div></li><li><div><b>Рабочий альбом.</b><span class="chto">Свожу все чертежи в&nbsp;один альбом. Инженерные проекты веду вместе с&nbsp;подрядчиками.</span><span class="itog"><i>Вы получаете:</i> альбом, по&nbsp;которому бригада делает ремонт.</span></div></li><li><div><b>Авторский надзор.</b><span class="chto">Приезжаю на&nbsp;объект и&nbsp;слежу, чтобы ремонт шёл точно по&nbsp;проекту.</span><span class="itog"><i>Вы получаете:</i> дизайнера на&nbsp;объекте.</span><span class="vm">[?1] сколько выездов в&nbsp;месяц&nbsp;– уточним у&nbsp;Светланы</span></div></li><li><div><b>Комплектация и&nbsp;декор.</b><span class="chto">Заказываю мебель, свет и&nbsp;текстиль, принимаю доставку, сверяю артикулы, оформляю возвраты. В&nbsp;конце подбираю декор и&nbsp;искусство.</span><span class="itog"><i>Вы получаете:</i> дом, в&nbsp;который можно въезжать: всё привезено, распаковано, шторы висят.</span></div></li></ol>
+  </div>
+</section>
+
+<section class="razdel" id="obo-mne" aria-labelledby="om">
+  <div class="obo-mne">
+    <h2 class="vid" id="om">Обо мне</h2>
+    <div class="obo-tekst"><p>Я&nbsp;пришла в&nbsp;дизайн через перепланировки: оформляла на&nbsp;них документы и&nbsp;видела, что&nbsp;могу предложить планировку лучше той, с&nbsp;которой ко&nbsp;мне пришли. Первые же&nbsp;заказчики попросили сделать им интерьер.</p><p>Для&nbsp;меня основа интерьера&nbsp;– планировка. Заказчики часто говорят, что&nbsp;после неё в&nbsp;квартире будто появилась ещё одна комната.</p><p>Одного стиля у&nbsp;меня нет. Классика, <span class="nowrap">ар-деко</span>, минимализм&nbsp;– выбираю под&nbsp;человека и&nbsp;дом.</p><p>Езжу на&nbsp;фабрики и&nbsp;выставки, чтобы дом не&nbsp;устарел через два сезона. В&nbsp;2026&nbsp;году была на&nbsp;Миланской неделе дизайна и&nbsp;написала обзор для&nbsp;ТОПДИЗАЙНМАГ.</p></div>
+    <ul class="fakty"><li><b>25&nbsp;лет</b> в&nbsp;профессии</li><li><b>Больше 100</b> завершённых проектов</li><li><b>85%</b> клиентов возвращаются с&nbsp;новыми задачами</li><li>Дизайнер в&nbsp;программах федеральных каналов.<span class="vm">[?2] какие программы и&nbsp;годы&nbsp;– уточним у&nbsp;Светланы</span></li></ul>
+  </div>
+</section>
+
+<section class="razdel priznanie" id="priznanie" aria-labelledby="pr">
+  <h2 class="vid" id="pr">Признание</h2>
+  <p class="vvod">В&nbsp;2016&nbsp;году&nbsp;– четыре профессиональных конкурса за&nbsp;один год.</p>
+  <ul class="nagrady"><li><span class="god">2017</span><span>European Property&nbsp;Awards, Лондон. Номинация «Лучший приватный интерьер России».</span></li><li><span class="god">2016</span><span>Interia&nbsp;Awards. Специальная номинация, загородный дом до&nbsp;300&nbsp;м².</span></li><li><span class="god">2016</span><span>Конкурс Designers Guild «Лучший интерьер с&nbsp;использованием тканей Designers Guild». Проект опубликован на&nbsp;сайте бренда.</span></li><li><span class="god">Pinwin</span><span>Специальный приз жюри за&nbsp;ванную комнату.</span></li><li><span class="god">Archiprofi</span><span><span class="nowrap">Топ-50</span> дизайнеров России.<span class="vm">[?3] год рейтинга&nbsp;– уточним у&nbsp;Светланы</span></span></li><li><span class="god">Modern Home&nbsp;Awards</span><span><span class="vm">[?4] год и&nbsp;номинация&nbsp;– уточним у&nbsp;Светланы</span></span></li></ul>
+  <p class="pressa">Публикации: «Красивые квартиры» (№&nbsp;45; в&nbsp;сотом номере работа отмечена среди лучших публикаций журнала за&nbsp;10&nbsp;лет), «Красивые дома» (№&nbsp;125, «Дом для&nbsp;большой семьи»), Salon Interior, DOM&amp;Podium (обложка), «Домой», Houzz, ТОПДИЗАЙНМАГ (2026).</p>
+</section>
+
+<section class="razdel tihiy" id="voprosy" aria-labelledby="vo">
+  <h2 class="vid" id="vo">Вопросы</h2>
+  <div class="voprosy"><div><h3>Сколько стоит проект и&nbsp;как&nbsp;считается цена?</h3><p>Проект и&nbsp;комплектацию считаю за&nbsp;квадратный метр, реализацию&nbsp;– по&nbsp;месяцам.</p><ul class="ceny"><li>полный проект&nbsp;– от&nbsp;8000&nbsp;₽ за&nbsp;м², предоплата 50%;</li><li>реализация по&nbsp;проекту&nbsp;– от&nbsp;60&nbsp;000&nbsp;₽ в&nbsp;месяц;</li><li>подбор и&nbsp;комплектация&nbsp;– от&nbsp;4000&nbsp;₽ за&nbsp;м², технические доработки&nbsp;– отдельным расчётом, предоплата 30%;</li><li>стайлинг&nbsp;– от&nbsp;45&nbsp;000&nbsp;₽, предоплата 100%;</li><li>консультация по&nbsp;планировке&nbsp;– 20&nbsp;000&nbsp;₽ за&nbsp;час, предоплата 50%.</li></ul><p>Для&nbsp;точного расчёта пришлите адрес, площадь и&nbsp;что&nbsp;нужно сделать.</p></div><div><h3>Сколько длится проект?</h3><p><span class="vm">[?5] срок проекта и&nbsp;ремонта&nbsp;– уточним у&nbsp;Светланы</span>Если нужно въехать быстро, подбираю мебель и&nbsp;декор из&nbsp;наличия у&nbsp;поставщиков.</p></div><div><h3>Вы работаете с&nbsp;моей бригадой?</h3><p><span class="vm">[?6] с&nbsp;бригадой заказчика: да или&nbsp;нет и&nbsp;на&nbsp;каких условиях&nbsp;– уточним у&nbsp;Светланы</span>У&nbsp;меня есть проверенные подрядчики. На&nbsp;авторском надзоре я&nbsp;встречаюсь с&nbsp;подрядчиками на&nbsp;объекте и&nbsp;слежу, чтобы ремонт шёл по&nbsp;чертежам. Мастеров на&nbsp;шторы, двери, зеркала и&nbsp;мебель на&nbsp;заказ подбираю сама.</p></div><div><h3>Можно заказать только планировку?</h3><p>Да, это консультация по&nbsp;планировке: час онлайн, 20&nbsp;000&nbsp;₽. На&nbsp;руках у&nbsp;вас остаётся эскизный чертёж с&nbsp;зонированием. С&nbsp;перепланировок я&nbsp;начинала в&nbsp;профессии.</p></div><div><h3>Нужно ли мне участвовать на&nbsp;каждом этапе?</h3><p>Нет. Вы выбираете планировку и&nbsp;утверждаете материалы и&nbsp;мебель. Поставщиков, заказы, доставку, приёмку и&nbsp;возвраты веду я, по&nbsp;магазинам ходить не&nbsp;придётся.<span class="vm">[?7] как&nbsp;часто нужны встречи и&nbsp;можно ли согласовывать онлайн&nbsp;– уточним у&nbsp;Светланы</span></p></div><div><h3>Вы работаете за&nbsp;пределами Москвы?</h3><p>В&nbsp;Подмосковье&nbsp;– да. Были проекты и&nbsp;дальше: например, студия в&nbsp;Паттайе. Консультацию по&nbsp;планировке провожу онлайн.<span class="vm">[?8] другие города сейчас: берётся ли Светлана и&nbsp;как&nbsp;ведёт&nbsp;– уточним у&nbsp;Светланы</span></p></div></div>
+</section>
+
+<section class="nachat" id="svyaz" aria-labelledby="nach">
+  <h2 class="vid" id="nach">Расскажите о&nbsp;своём доме</h2>
+  <p>Позвоните или&nbsp;напишите в&nbsp;Телеграм. Сразу пригодятся адрес, площадь и&nbsp;что&nbsp;нужно сделать. Дальше&nbsp;– встреча на&nbsp;объекте.</p>
+  <a class="bolshoy-tel" href="tel:+79166199985">+7 916 619-99-85</a>
+  <div class="knopki"><a class="knopka" href="tel:+79166199985">Позвонить <span class="skryto">+7 916 619-99-85</span></a><a class="knopka vtor" href="https://t.me/svetlana_ilina_interior" rel="noopener">Написать в Телеграм</a></div>
+</section>
+</main>
+<footer class="niz">
+  <span>© Светлана Ильина, дизайнер интерьеров, Москва</span>
+  <span><a href="tel:+79166199985" class="nowrap">+7 916 619-99-85</a> · <a href="https://t.me/svetlana_ilina_interior" rel="noopener">Телеграм</a> · <a href="proekty/index.html">Ранние работы</a></span>
+</footer>
+</body></html>
